@@ -17,7 +17,6 @@ __MWOPC_PART_BEGIN__ /[Content_Types].xml
   <Override ContentType="application/vnd.mathworks.simulink.configSet+xml" PartName="/simulink/configSet0.xml"/>
   <Override ContentType="application/vnd.mathworks.simulink.configSetInfo+xml" PartName="/simulink/configSetInfo.xml"/>
   <Override ContentType="application/vnd.mathworks.simulink.mf0+xml" PartName="/simulink/modelDictionary.xml"/>
-  <Override ContentType="application/vnd.mathworks.simulink.pluginParameters+xml" PartName="/simulink/plugins/sl_paper_props.xml"/>
   <Override ContentType="application/vnd.mathworks.simulink.ScheduleCore+xml" PartName="/simulink/ScheduleCore.xml"/>
   <Override ContentType="application/vnd.mathworks.simulink.ScheduleEditor+xml" PartName="/simulink/ScheduleEditor.xml"/>
   <Override ContentType="application/vnd.mathworks.simulink.blockDiagram+xml" PartName="/simulink/windowsInfo.xml"/>
@@ -43,8 +42,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2013-09-09T08:33:43Z</dcterms:created>
   <dc:creator>EYA</dc:creator>
   <cp:lastModifiedBy>panag</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2026-04-05T21:01:56Z</dcterms:modified>
-  <cp:revision>20.3</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2026-04-12T09:48:17Z</dcterms:modified>
+  <cp:revision>20.5</cp:revision>
   <cp:version>R2025b</cp:version>
 </cp:coreProperties>
 
@@ -79,7 +78,6 @@ __MWOPC_PART_BEGIN__ /simulink/_rels/blockdiagram.xml.rels
   <Relationship Id="ScheduleCore" Target="ScheduleCore.xml" Type="http://schemas.mathworks.com/simulink/2013/relationships/ScheduleCore"/>
   <Relationship Id="ScheduleEditor" Target="ScheduleEditor.xml" Type="http://schemas.mathworks.com/simulink/2013/relationships/ScheduleEditor"/>
   <Relationship Id="graphicalInterface" Target="graphicalInterface.json" Type="http://schemas.mathworks.com/simulinkModel/2014/relationships/graphicalInterface"/>
-  <Relationship Id="sl_paper_props" Target="plugins/sl_paper_props.xml" Type="http://schemas.mathworks.com/simulinkModel/2014/relationships/pluginParameters"/>
   <Relationship Id="system_root" Target="systems/system_root.xml" Type="http://schemas.mathworks.com/simulink/2010/relationships/system"/>
   <Relationship Id="windowsInfo" Target="windowsInfo.xml" Type="http://schemas.mathworks.com/simulinkModel/2019/relationships/windowsInfo"/>
 </Relationships>
@@ -110,7 +108,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
 <?xml version="1.0" encoding="utf-8"?>
 <ModelInformation Version="1.0">
   <Model>
-    <P Name="ModelUUID">2abc2e58-bc0d-4cbf-9b05-1cef58e625ef</P>
+    <P Name="ModelUUID">84cce094-7c0f-40bd-af52-cc695365a2be</P>
     <P Name="InitFcn">dt=1.5625;
 bitrate=10e9;
 
@@ -120,7 +118,7 @@ bitrate=10e9;
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:20.3&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:20.5&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="LibraryLinkDisplay">none</P>
@@ -160,7 +158,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
     <P Name="ExtraOptions" Class="char"/>
     <P Name="Name" Class="char">Configuration</P>
     <P Name="CurrentDlgPage" Class="char">Solver</P>
-    <P Name="ConfigPrmDlgPosition" Class="double">[126.0, 50.0, 675.0, 488.0]</P>
+    <P Name="ConfigPrmDlgPosition" Class="double">[873.0, 71.0, 900.0, 710.0]</P>
     <P Name="Description" Class="char"/>
     <P Name="Version" Class="char">25.0.0</P>
     <Array PropName="Components" Type="Simulink.ConfigComponent" Dimension="9*1">
@@ -192,7 +190,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="ZeroCrossControl" Class="char">UseLocalSettings</P>
         <P Name="ZeroCrossAlgorithm" Class="char">Nonadaptive</P>
         <P Name="AlgebraicLoopSolver" Class="char">TrustRegion</P>
-        <P Name="SolverInfoToggleStatus" Class="char">off</P>
+        <P Name="SolverInfoToggleStatus" Class="char">on</P>
         <P Name="IsAutoAppliedInSIP" Class="char">off</P>
         <P Name="SolverResetMethod" Class="char">Fast</P>
         <P Name="PositivePriorityOrder" Class="char">off</P>
@@ -966,86 +964,6 @@ __MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
     <Interface type="Interface" uuid="8ea55cb9-29b2-4f36-8c44-fa9a212f1bbf"/>
   </System>
 </MF0>
-__MWOPC_PART_BEGIN__ /simulink/plugins/sl_paper_props.xml
-<?xml version="1.0" encoding="utf-8"?>
-<sl_paper_props>
-  <P Name="PaperType">A4</P>
-  <P Name="PaperUnits">centimeters</P>
-  <P Name="SLPluginBlockParameter">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot; ?&gt;
-&lt;!DOCTYPE boost_serialization&gt;
-&lt;boost_serialization signature=&quot;serialization::archive&quot; version=&quot;19&quot;&gt;
-&lt;sl_paper_props_BlockParamValueTable class_id=&quot;0&quot; tracking_level=&quot;0&quot; version=&quot;0&quot;&gt;
-	&lt;count&gt;3&lt;/count&gt;
-	&lt;item_version&gt;0&lt;/item_version&gt;
-	&lt;item class_id=&quot;1&quot; tracking_level=&quot;0&quot; version=&quot;0&quot;&gt;
-		&lt;first&gt;subsystem2_smf/Input signal&lt;/first&gt;
-		&lt;second class_id=&quot;2&quot; tracking_level=&quot;0&quot; version=&quot;0&quot;&gt;
-			&lt;count&gt;3&lt;/count&gt;
-			&lt;item_version&gt;0&lt;/item_version&gt;
-			&lt;item class_id=&quot;3&quot; tracking_level=&quot;0&quot; version=&quot;0&quot;&gt;
-				&lt;first&gt;PaperType&lt;/first&gt;
-				&lt;second&gt;A4&lt;/second&gt;
-			&lt;/item&gt;
-			&lt;item&gt;
-				&lt;first&gt;PaperUnits&lt;/first&gt;
-				&lt;second&gt;centimeters&lt;/second&gt;
-			&lt;/item&gt;
-			&lt;item&gt;
-				&lt;first&gt;TiledPaperMargins&lt;/first&gt;
-				&lt;second&gt;[1.270000, 1.270000, 1.270000, 1.270000]&lt;/second&gt;
-			&lt;/item&gt;
-		&lt;/second&gt;
-	&lt;/item&gt;
-	&lt;item&gt;
-		&lt;first&gt;subsystem2_smf/SSMF&lt;/first&gt;
-		&lt;second&gt;
-			&lt;count&gt;3&lt;/count&gt;
-			&lt;item_version&gt;0&lt;/item_version&gt;
-			&lt;item&gt;
-				&lt;first&gt;PaperType&lt;/first&gt;
-				&lt;second&gt;A4&lt;/second&gt;
-			&lt;/item&gt;
-			&lt;item&gt;
-				&lt;first&gt;PaperUnits&lt;/first&gt;
-				&lt;second&gt;centimeters&lt;/second&gt;
-			&lt;/item&gt;
-			&lt;item&gt;
-				&lt;first&gt;TiledPaperMargins&lt;/first&gt;
-				&lt;second&gt;[1.270000, 1.270000, 1.270000, 1.270000]&lt;/second&gt;
-			&lt;/item&gt;
-		&lt;/second&gt;
-	&lt;/item&gt;
-	&lt;item&gt;
-		&lt;first&gt;subsystem2_smf/SSMF1&lt;/first&gt;
-		&lt;second&gt;
-			&lt;count&gt;3&lt;/count&gt;
-			&lt;item_version&gt;0&lt;/item_version&gt;
-			&lt;item&gt;
-				&lt;first&gt;PaperType&lt;/first&gt;
-				&lt;second&gt;A4&lt;/second&gt;
-			&lt;/item&gt;
-			&lt;item&gt;
-				&lt;first&gt;PaperUnits&lt;/first&gt;
-				&lt;second&gt;centimeters&lt;/second&gt;
-			&lt;/item&gt;
-			&lt;item&gt;
-				&lt;first&gt;TiledPaperMargins&lt;/first&gt;
-				&lt;second&gt;[1.270000, 1.270000, 1.270000, 1.270000]&lt;/second&gt;
-			&lt;/item&gt;
-		&lt;/second&gt;
-	&lt;/item&gt;
-&lt;/sl_paper_props_BlockParamValueTable&gt;
-&lt;sl_paper_props_MxArrayBlockParamValueTable class_id=&quot;4&quot; tracking_level=&quot;0&quot; version=&quot;0&quot;&gt;
-	&lt;count&gt;0&lt;/count&gt;
-	&lt;item_version&gt;0&lt;/item_version&gt;
-&lt;/sl_paper_props_MxArrayBlockParamValueTable&gt;
-
-&lt;/boost_serialization&gt;
-
-</P>
-  <P Name="TiledPaperMargins">[1.270000, 1.270000, 1.270000, 1.270000]</P>
-</sl_paper_props>
-
 __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <sltp_graph version="1.1" packageUris="http://schema.mathworks.com/mf0/sltp_mm/R2025a_202406271200">
@@ -1723,9 +1641,8 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
 <System>
   <P Name="Location">[-1, -8, 1921, 1033]</P>
   <P Name="Open">on</P>
-  <P Name="ZoomFactor">150</P>
   <P Name="ReportName">simulink-default.rpt</P>
-  <P Name="SIDHighWatermark">539</P>
+  <P Name="SIDHighWatermark">543</P>
   <Block BlockType="Buffer" Name="Buffer" SID="473">
     <P Name="Position">[245, 165, 295, 215]</P>
     <P Name="ZOrder">-1</P>
@@ -1750,7 +1667,6 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
   <Block BlockType="Gain" Name="Gain1" SID="526">
     <P Name="Position">[735, 420, 760, 450]</P>
     <P Name="ZOrder">5</P>
-    <P Name="Gain">1000</P>
   </Block>
   <Block BlockType="SubSystem" Name="Input signal" SID="138">
     <PortCounts in="1" out="1"/>
@@ -1776,7 +1692,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
       </MaskParameter>
       <MaskParameter Name="Tfwhm" Type="edit">
         <Prompt> Initial pulse width in psec</Prompt>
-        <Value>10</Value>
+        <Value>40</Value>
       </MaskParameter>
       <MaskParameter Name="t0" Type="edit">
         <Prompt>Pulse center in psec</Prompt>
@@ -1810,6 +1726,13 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
     <P Name="Operator">magnitude^2</P>
     <P Name="SignedPower">on</P>
   </Block>
+  <Block BlockType="Mux" Name="Mux" SID="540">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[1005, 591, 1010, 629]</P>
+    <P Name="ZOrder">7</P>
+    <P Name="Inputs">2</P>
+    <P Name="DisplayOption">bar</P>
+  </Block>
   <Block BlockType="SubSystem" Name="SSMF" SID="357">
     <PortCounts in="1" out="1"/>
     <P Name="Position">[670, 156, 785, 224]</P>
@@ -1830,7 +1753,7 @@ The following effects are included: group velocity dispersion (GVD), higher orde
       </MaskParameter>
       <MaskParameter Name="dz" Type="edit">
         <Prompt>Distance step (km)</Prompt>
-        <Value>0.01</Value>
+        <Value>0</Value>
       </MaskParameter>
       <MaskParameter Name="nz" Type="edit">
         <Prompt>Number of steps (L=nz*dz)</Prompt>
@@ -1895,11 +1818,11 @@ The following effects are included: group velocity dispersion (GVD), higher orde
       </MaskParameter>
       <MaskParameter Name="nz" Type="edit">
         <Prompt>Number of steps (L=nz*dz)</Prompt>
-        <Value>300</Value>
+        <Value>10</Value>
       </MaskParameter>
       <MaskParameter Name="lamda0" Type="edit">
         <Prompt>Center wavelength (nm)</Prompt>
-        <Value>1550</Value>
+        <Value>1300</Value>
       </MaskParameter>
       <MaskParameter Name="alpha_indB" Type="edit">
         <Prompt>Power loss coefficient (dB/km)</Prompt>
@@ -1936,7 +1859,7 @@ The following effects are included: group velocity dispersion (GVD), higher orde
     <PortCounts in="1"/>
     <P Name="Position">[905, 419, 935, 451]</P>
     <P Name="ZOrder">3</P>
-    <P Name="GraphicalSettings">{&quot;AxesScalingProperties&quot;:{&quot;AlignXAxis&quot;:&quot;Center&quot;,&quot;AlignYAxis&quot;:&quot;Center&quot;,&quot;AutoScaleXAxisLimits&quot;:false,&quot;AxesScaling&quot;:&quot;Manual&quot;,&quot;AxesScalingNumUpdates&quot;:10,&quot;ExpandOnly&quot;:true,&quot;ScaleAxesLimitsAtStop&quot;:false,&quot;XAxisDataRange&quot;:100,&quot;YAxisDataRange&quot;:80},&quot;DisplayProperties&quot;:{&quot;ColorOrder&quot;:[&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;],&quot;DisplayContentCache&quot;:{&quot;LinePropertiesCache&quot;:{},&quot;PlotMagPhase&quot;:0,&quot;Title&quot;:&quot;&quot;,&quot;UserDefinedChannelNames&quot;:{}},&quot;DisplayLayoutDimensions&quot;:[1,1],&quot;DisplayPropertyDefaults&quot;:{&quot;MaxYLimMag&quot;:112.49999999999856,&quot;MaxYLimReal&quot;:112.49999999999856,&quot;MinYLimMag&quot;:0,&quot;MinYLimReal&quot;:-12.499999999999837,&quot;PlotAsMagnitudePhase&quot;:false,&quot;ShowGrid&quot;:true,&quot;ShowLegend&quot;:false,&quot;Title&quot;:&quot;%&lt;SignalLabel&gt;&quot;,&quot;YLabel&quot;:&quot;&quot;},&quot;SerializedDisplays&quot;:[{&quot;LinePropertiesCache&quot;:{},&quot;MaxYLimMag&quot;:112.49999999999856,&quot;MaxYLimReal&quot;:112.49999999999856,&quot;MinYLimMag&quot;:0,&quot;MinYLimReal&quot;:-12.499999999999837,&quot;NumLines&quot;:1,&quot;Placement&quot;:0,&quot;PlotAsMagnitudePhase&quot;:false,&quot;PlotMagPhase&quot;:0,&quot;ShowContent&quot;:1,&quot;ShowGrid&quot;:true,&quot;ShowLegend&quot;:false,&quot;Title&quot;:&quot;%&lt;SignalLabel&gt;&quot;,&quot;UserDefinedChannelNames&quot;:{},&quot;YLabel&quot;:&quot;&quot;}]},&quot;MeasurementChannel&quot;:0,&quot;Style&quot;:{&quot;AxesColor&quot;:[0.070588235294117646,0.070588235294117646,0.070588235294117646],&quot;BackgroundColor&quot;:[0.12941176470588237,0.12941176470588237,0.12941176470588237],&quot;BarWidth&quot;:[0.9],&quot;ChannelNames&quot;:[&quot;&quot;],&quot;DefaultLegendLabel&quot;:[&quot;Unbuffer1&quot;],&quot;FontSize&quot;:8.5,&quot;LabelsColor&quot;:[0.85098039215686272,0.85098039215686272,0.85098039215686272],&quot;LineCache&quot;:null,&quot;LineColor&quot;:[&quot;auto&quot;],&quot;LineEdgeAlpha&quot;:[1],&quot;LineFaceAlpha&quot;:[1],&quot;LineLabels&quot;:[&quot;Unbuffer1&quot;],&quot;LineStyle&quot;:[&quot;-&quot;],&quot;LineTrueColor&quot;:[[1,0.90980392156862744,0.39215686274509803]],&quot;LineWidth&quot;:[1.5],&quot;Marker&quot;:[&quot;none&quot;],&quot;MinimizeControls&quot;:false,&quot;NumLinesForDisplays&quot;:[1],&quot;OffsetView&quot;:true,&quot;PlotType&quot;:&quot;Auto&quot;,&quot;PreserveColors&quot;:false,&quot;Visible&quot;:[true]}}</P>
+    <P Name="GraphicalSettings">{&quot;Style&quot;:{&quot;BackgroundColor&quot;:[0.12941176470588237,0.12941176470588237,0.12941176470588237],&quot;AxesColor&quot;:[0.07058823529411765,0.07058823529411765,0.07058823529411765],&quot;LabelsColor&quot;:[0.8509803921568627,0.8509803921568627,0.8509803921568627],&quot;PreserveColors&quot;:false,&quot;Visible&quot;:[true,true,true,true,true,true,true],&quot;LineStyle&quot;:[&quot;-&quot;,&quot;-&quot;,&quot;-&quot;,&quot;-&quot;,&quot;-&quot;,&quot;-&quot;,&quot;-&quot;],&quot;LineWidth&quot;:[1.5,1.5,1.5,1.5,1.5,1.5,1.5],&quot;BarWidth&quot;:[0.9,0.9,0.9,0.9,0.9,0.9,0.9],&quot;LineColor&quot;:[[1,0.9098039215686274,0.39215686274509803],[0.14901960784313725,0.5490196078431373,0.8666666666666667],[0.9607843137254902,0.4666666666666667,0.1607843137254902],[0.28627450980392155,0.8588235294117647,0.25098039215686274],[0.7529411764705882,0.3607843137254902,0.984313725490196],[0.4235294117647059,0.9568627450980393,1],[0.9490196078431372,0.403921568627451,0.7725490196078432]],&quot;LineFaceAlpha&quot;:[1,1,1,1,1,1,1],&quot;LineEdgeAlpha&quot;:[1,1,1,1,1,1,1],&quot;Marker&quot;:[&quot;none&quot;,&quot;none&quot;,&quot;none&quot;,&quot;none&quot;,&quot;none&quot;,&quot;none&quot;,&quot;none&quot;],&quot;FontSize&quot;:8.5,&quot;ChannelNames&quot;:[&quot;&quot;],&quot;DefaultLegendLabel&quot;:[&quot;Unbuffer1&quot;],&quot;PlotType&quot;:&quot;Auto&quot;,&quot;NumLinesForDisplays&quot;:[-1],&quot;OffsetView&quot;:true,&quot;LineLabels&quot;:[&quot;Unbuffer1&quot;,&quot;Channel 2&quot;,&quot;Channel 3&quot;,&quot;Channel 4&quot;,&quot;Channel 5&quot;,&quot;Channel 6&quot;,&quot;Channel 7&quot;],&quot;MinimizeControls&quot;:false,&quot;LineCache&quot;:null,&quot;SerializedNumLines&quot;:[1]},&quot;MeasurementChannel&quot;:0,&quot;AxesScalingProperties&quot;:{&quot;AxesScaling&quot;:&quot;Manual&quot;,&quot;ExpandOnly&quot;:true,&quot;AxesScalingNumUpdates&quot;:10,&quot;ScaleAxesLimitsAtStop&quot;:false,&quot;YAxisDataRange&quot;:80,&quot;AlignYAxis&quot;:&quot;Center&quot;,&quot;AutoScaleXAxisLimits&quot;:false,&quot;XAxisDataRange&quot;:100,&quot;AlignXAxis&quot;:&quot;Center&quot;},&quot;DisplayProperties&quot;:{&quot;DisplayLayoutDimensions&quot;:[1,1],&quot;DisplayPropertyDefaults&quot;:{&quot;MaxYLimMag&quot;:27.291204878915533,&quot;MaxYLimReal&quot;:24.679844250268715,&quot;MinYLimMag&quot;:0,&quot;MinYLimReal&quot;:-1.367043611123897,&quot;PlotAsMagnitudePhase&quot;:false,&quot;ShowGrid&quot;:true,&quot;ShowLegend&quot;:false,&quot;Title&quot;:&quot;%&lt;SignalLabel&gt;&quot;,&quot;YLabel&quot;:&quot;&quot;},&quot;DisplayContentCache&quot;:{&quot;Title&quot;:&quot;&quot;,&quot;LinePropertiesCache&quot;:{},&quot;UserDefinedChannelNames&quot;:{},&quot;PlotMagPhase&quot;:0},&quot;SerializedDisplays&quot;:[{&quot;Title&quot;:&quot;%&lt;SignalLabel&gt;&quot;,&quot;LinePropertiesCache&quot;:{},&quot;UserDefinedChannelNames&quot;:{},&quot;PlotMagPhase&quot;:0,&quot;MaxYLimMag&quot;:27.291204878915533,&quot;MaxYLimReal&quot;:24.679844250268715,&quot;MinYLimMag&quot;:0,&quot;MinYLimReal&quot;:-1.367043611123897,&quot;PlotAsMagnitudePhase&quot;:false,&quot;ShowGrid&quot;:true,&quot;ShowLegend&quot;:false,&quot;YLabel&quot;:&quot;&quot;,&quot;NumLines&quot;:-1,&quot;ShowContent&quot;:1,&quot;Placement&quot;:0}],&quot;ColorOrder&quot;:[&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;]}}</P>
     <P Name="WindowPosition">[1.000000,49.000000,1920.000000,1009.000000,]</P>
     <P Name="ScopeFrameLocation">window</P>
     <P Name="WasSavedAsWebScope">on</P>
@@ -1951,7 +1874,7 @@ The following effects are included: group velocity dispersion (GVD), higher orde
     <PortCounts in="1"/>
     <P Name="Position">[495, 364, 525, 396]</P>
     <P Name="ZOrder">-12</P>
-    <P Name="GraphicalSettings">{&quot;AxesScalingProperties&quot;:{&quot;AlignXAxis&quot;:&quot;Center&quot;,&quot;AlignYAxis&quot;:&quot;Center&quot;,&quot;AutoScaleXAxisLimits&quot;:false,&quot;AxesScaling&quot;:&quot;Manual&quot;,&quot;AxesScalingNumUpdates&quot;:10,&quot;ExpandOnly&quot;:true,&quot;ScaleAxesLimitsAtStop&quot;:false,&quot;XAxisDataRange&quot;:100,&quot;YAxisDataRange&quot;:80},&quot;DisplayProperties&quot;:{&quot;ColorOrder&quot;:[&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;],&quot;DisplayContentCache&quot;:{&quot;LinePropertiesCache&quot;:{},&quot;PlotMagPhase&quot;:0,&quot;Title&quot;:&quot;&quot;,&quot;UserDefinedChannelNames&quot;:{}},&quot;DisplayLayoutDimensions&quot;:[1,1],&quot;DisplayPropertyDefaults&quot;:{&quot;MaxYLimMag&quot;:1,&quot;MaxYLimReal&quot;:1,&quot;MinYLimMag&quot;:0,&quot;MinYLimReal&quot;:-1,&quot;PlotAsMagnitudePhase&quot;:false,&quot;ShowGrid&quot;:true,&quot;ShowLegend&quot;:false,&quot;Title&quot;:&quot;%&lt;SignalLabel&gt;&quot;,&quot;YLabel&quot;:&quot;&quot;},&quot;SerializedDisplays&quot;:[{&quot;LinePropertiesCache&quot;:{},&quot;MaxYLimMag&quot;:1,&quot;MaxYLimReal&quot;:1,&quot;MinYLimMag&quot;:0,&quot;MinYLimReal&quot;:-1,&quot;NumLines&quot;:1,&quot;Placement&quot;:0,&quot;PlotAsMagnitudePhase&quot;:false,&quot;PlotMagPhase&quot;:0,&quot;ShowContent&quot;:1,&quot;ShowGrid&quot;:true,&quot;ShowLegend&quot;:false,&quot;Title&quot;:&quot;%&lt;SignalLabel&gt;&quot;,&quot;UserDefinedChannelNames&quot;:{},&quot;YLabel&quot;:&quot;&quot;}]},&quot;MeasurementChannel&quot;:0,&quot;Style&quot;:{&quot;AxesColor&quot;:[0.070588235294117646,0.070588235294117646,0.070588235294117646],&quot;BackgroundColor&quot;:[0.12941176470588237,0.12941176470588237,0.12941176470588237],&quot;BarWidth&quot;:[0.9],&quot;ChannelNames&quot;:[&quot;&quot;],&quot;DefaultLegendLabel&quot;:[&quot;Math Function2&quot;],&quot;FontSize&quot;:8.5,&quot;LabelsColor&quot;:[0.85098039215686272,0.85098039215686272,0.85098039215686272],&quot;LineCache&quot;:null,&quot;LineColor&quot;:[&quot;auto&quot;],&quot;LineEdgeAlpha&quot;:[1],&quot;LineFaceAlpha&quot;:[1],&quot;LineLabels&quot;:[&quot;Math Function2&quot;],&quot;LineStyle&quot;:[&quot;-&quot;],&quot;LineTrueColor&quot;:[[1,0.90980392156862744,0.39215686274509803]],&quot;LineWidth&quot;:[1.5],&quot;Marker&quot;:[&quot;none&quot;],&quot;MinimizeControls&quot;:false,&quot;NumLinesForDisplays&quot;:[1],&quot;OffsetView&quot;:true,&quot;PlotType&quot;:&quot;Auto&quot;,&quot;PreserveColors&quot;:false,&quot;Visible&quot;:[true]}}</P>
+    <P Name="GraphicalSettings">{&quot;Style&quot;:{&quot;BackgroundColor&quot;:[0.12941176470588237,0.12941176470588237,0.12941176470588237],&quot;AxesColor&quot;:[0.07058823529411765,0.07058823529411765,0.07058823529411765],&quot;LabelsColor&quot;:[0.8509803921568627,0.8509803921568627,0.8509803921568627],&quot;PreserveColors&quot;:false,&quot;Visible&quot;:[true,true,true,true,true,true,true],&quot;LineStyle&quot;:[&quot;-&quot;,&quot;-&quot;,&quot;-&quot;,&quot;-&quot;,&quot;-&quot;,&quot;-&quot;,&quot;-&quot;],&quot;LineWidth&quot;:[1.5,1.5,1.5,1.5,1.5,1.5,1.5],&quot;BarWidth&quot;:[0.9,0.9,0.9,0.9,0.9,0.9,0.9],&quot;LineColor&quot;:[[1,0.9098039215686274,0.39215686274509803],[0.14901960784313725,0.5490196078431373,0.8666666666666667],[0.9607843137254902,0.4666666666666667,0.1607843137254902],[0.28627450980392155,0.8588235294117647,0.25098039215686274],[0.7529411764705882,0.3607843137254902,0.984313725490196],[0.4235294117647059,0.9568627450980393,1],[0.9490196078431372,0.403921568627451,0.7725490196078432]],&quot;LineFaceAlpha&quot;:[1,1,1,1,1,1,1],&quot;LineEdgeAlpha&quot;:[1,1,1,1,1,1,1],&quot;Marker&quot;:[&quot;none&quot;,&quot;none&quot;,&quot;none&quot;,&quot;none&quot;,&quot;none&quot;,&quot;none&quot;,&quot;none&quot;],&quot;FontSize&quot;:8.5,&quot;ChannelNames&quot;:[&quot;&quot;],&quot;DefaultLegendLabel&quot;:[&quot;Math Function2&quot;],&quot;PlotType&quot;:&quot;Auto&quot;,&quot;NumLinesForDisplays&quot;:[-1],&quot;OffsetView&quot;:true,&quot;LineLabels&quot;:[&quot;Math Function2&quot;,&quot;Channel 2&quot;,&quot;Channel 3&quot;,&quot;Channel 4&quot;,&quot;Channel 5&quot;,&quot;Channel 6&quot;,&quot;Channel 7&quot;],&quot;MinimizeControls&quot;:false,&quot;LineCache&quot;:null,&quot;SerializedNumLines&quot;:[1]},&quot;MeasurementChannel&quot;:0,&quot;AxesScalingProperties&quot;:{&quot;AxesScaling&quot;:&quot;Manual&quot;,&quot;ExpandOnly&quot;:true,&quot;AxesScalingNumUpdates&quot;:10,&quot;ScaleAxesLimitsAtStop&quot;:false,&quot;YAxisDataRange&quot;:80,&quot;AlignYAxis&quot;:&quot;Center&quot;,&quot;AutoScaleXAxisLimits&quot;:false,&quot;XAxisDataRange&quot;:100,&quot;AlignXAxis&quot;:&quot;Center&quot;},&quot;DisplayProperties&quot;:{&quot;DisplayLayoutDimensions&quot;:[1,1],&quot;DisplayPropertyDefaults&quot;:{&quot;MaxYLimMag&quot;:0.056249999999999994,&quot;MaxYLimReal&quot;:0.051431718061674,&quot;MinYLimMag&quot;:0,&quot;MinYLimReal&quot;:-0.004047356828193828,&quot;PlotAsMagnitudePhase&quot;:false,&quot;ShowGrid&quot;:true,&quot;ShowLegend&quot;:false,&quot;Title&quot;:&quot;%&lt;SignalLabel&gt;&quot;,&quot;YLabel&quot;:&quot;&quot;},&quot;DisplayContentCache&quot;:{&quot;Title&quot;:&quot;&quot;,&quot;LinePropertiesCache&quot;:{},&quot;UserDefinedChannelNames&quot;:{},&quot;PlotMagPhase&quot;:0},&quot;SerializedDisplays&quot;:[{&quot;Title&quot;:&quot;%&lt;SignalLabel&gt;&quot;,&quot;LinePropertiesCache&quot;:{},&quot;UserDefinedChannelNames&quot;:{},&quot;PlotMagPhase&quot;:0,&quot;MaxYLimMag&quot;:0.056249999999999994,&quot;MaxYLimReal&quot;:0.051431718061674,&quot;MinYLimMag&quot;:0,&quot;MinYLimReal&quot;:-0.004047356828193828,&quot;PlotAsMagnitudePhase&quot;:false,&quot;ShowGrid&quot;:true,&quot;ShowLegend&quot;:false,&quot;YLabel&quot;:&quot;&quot;,&quot;NumLines&quot;:-1,&quot;ShowContent&quot;:1,&quot;Placement&quot;:0}],&quot;ColorOrder&quot;:[&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;]}}</P>
     <P Name="WindowPosition">[1.000000,49.000000,1920.000000,1009.000000,]</P>
     <P Name="ScopeFrameLocation">window</P>
     <P Name="WasSavedAsWebScope">on</P>
@@ -1967,6 +1890,28 @@ The following effects are included: group velocity dispersion (GVD), higher orde
     <P Name="DataLoggingDecimation">1</P>
     <P Name="DataLogging">on</P>
     <P Name="DataLoggingVariableName">fiber_prop2</P>
+    <P Name="DataLoggingSaveFormat">Structure With Time</P>
+  </Block>
+  <Block BlockType="Scope" Name="Scope Input &amp; Scope DSF Output" SID="541">
+    <PortCounts in="1"/>
+    <P Name="Position">[1025, 594, 1055, 626]</P>
+    <P Name="ZOrder">8</P>
+    <P Name="GraphicalSettings">{&quot;Style&quot;:{&quot;BackgroundColor&quot;:[0.12941176470588237,0.12941176470588237,0.12941176470588237],&quot;AxesColor&quot;:[0.07058823529411765,0.07058823529411765,0.07058823529411765],&quot;LabelsColor&quot;:[0.8509803921568627,0.8509803921568627,0.8509803921568627],&quot;PreserveColors&quot;:false,&quot;Visible&quot;:[true,true,true,true,true,true,true],&quot;LineStyle&quot;:[&quot;-&quot;,&quot;-&quot;,&quot;-&quot;,&quot;-&quot;,&quot;-&quot;,&quot;-&quot;,&quot;-&quot;],&quot;LineWidth&quot;:[1.5,1.5,1.5,1.5,1.5,1.5,1.5],&quot;BarWidth&quot;:[0.9,0.9,0.9,0.9,0.9,0.9,0.9],&quot;LineColor&quot;:[[1,0.9098039215686274,0.39215686274509803],[0.14901960784313725,0.5490196078431373,0.8666666666666667],[0.9607843137254902,0.4666666666666667,0.1607843137254902],[0.28627450980392155,0.8588235294117647,0.25098039215686274],[0.7529411764705882,0.3607843137254902,0.984313725490196],[0.4235294117647059,0.9568627450980393,1],[0.9490196078431372,0.403921568627451,0.7725490196078432]],&quot;LineFaceAlpha&quot;:[1,1,1,1,1,1,1],&quot;LineEdgeAlpha&quot;:[1,1,1,1,1,1,1],&quot;Marker&quot;:[&quot;none&quot;,&quot;none&quot;,&quot;none&quot;,&quot;none&quot;,&quot;none&quot;,&quot;none&quot;,&quot;none&quot;],&quot;FontSize&quot;:8.5,&quot;ChannelNames&quot;:[&quot;&quot;],&quot;DefaultLegendLabel&quot;:[&quot;Unbuffer1&quot;,&quot;Transport Delay&quot;],&quot;PlotType&quot;:&quot;Auto&quot;,&quot;NumLinesForDisplays&quot;:[-1],&quot;OffsetView&quot;:true,&quot;LineLabels&quot;:[&quot;Unbuffer1&quot;,&quot;Transport Delay&quot;,&quot;Channel 3&quot;,&quot;Channel 4&quot;,&quot;Channel 5&quot;,&quot;Channel 6&quot;,&quot;Channel 7&quot;],&quot;MinimizeControls&quot;:false,&quot;LineCache&quot;:null,&quot;SerializedNumLines&quot;:[2]},&quot;MeasurementChannel&quot;:0,&quot;Peaks&quot;:{&quot;NumPeaks&quot;:3,&quot;MinHeight&quot;:null,&quot;MinDistance&quot;:1,&quot;Threshold&quot;:0,&quot;LabelPeaks&quot;:false,&quot;LabelFormat&quot;:&quot;x + y&quot;,&quot;Enabled&quot;:true},&quot;Stats&quot;:{&quot;ShowMax&quot;:true,&quot;ShowMin&quot;:true,&quot;ShowPeakToPeak&quot;:true,&quot;ShowMean&quot;:true,&quot;ShowVariance&quot;:false,&quot;ShowStandardDeviation&quot;:true,&quot;ShowMedian&quot;:true,&quot;ShowRMS&quot;:true,&quot;ShowMeanSquare&quot;:false,&quot;Enabled&quot;:true},&quot;AxesScalingProperties&quot;:{&quot;AxesScaling&quot;:&quot;Manual&quot;,&quot;ExpandOnly&quot;:true,&quot;AxesScalingNumUpdates&quot;:10,&quot;ScaleAxesLimitsAtStop&quot;:false,&quot;YAxisDataRange&quot;:80,&quot;AlignYAxis&quot;:&quot;Center&quot;,&quot;AutoScaleXAxisLimits&quot;:false,&quot;XAxisDataRange&quot;:100,&quot;AlignXAxis&quot;:&quot;Center&quot;},&quot;DisplayProperties&quot;:{&quot;DisplayLayoutDimensions&quot;:[1,1],&quot;DisplayPropertyDefaults&quot;:{&quot;MaxYLimMag&quot;:1,&quot;MaxYLimReal&quot;:1,&quot;MinYLimMag&quot;:0,&quot;MinYLimReal&quot;:-1,&quot;PlotAsMagnitudePhase&quot;:false,&quot;ShowGrid&quot;:true,&quot;ShowLegend&quot;:false,&quot;Title&quot;:&quot;%&lt;SignalLabel&gt;&quot;,&quot;YLabel&quot;:&quot;&quot;},&quot;DisplayContentCache&quot;:{&quot;Title&quot;:&quot;&quot;,&quot;LinePropertiesCache&quot;:{},&quot;UserDefinedChannelNames&quot;:{},&quot;PlotMagPhase&quot;:0},&quot;SerializedDisplays&quot;:[{&quot;Title&quot;:&quot;%&lt;SignalLabel&gt;&quot;,&quot;LinePropertiesCache&quot;:{},&quot;UserDefinedChannelNames&quot;:{},&quot;PlotMagPhase&quot;:0,&quot;MaxYLimMag&quot;:1,&quot;MaxYLimReal&quot;:1,&quot;MinYLimMag&quot;:0,&quot;MinYLimReal&quot;:-1,&quot;PlotAsMagnitudePhase&quot;:false,&quot;ShowGrid&quot;:true,&quot;ShowLegend&quot;:false,&quot;YLabel&quot;:&quot;&quot;,&quot;NumLines&quot;:-1,&quot;ShowContent&quot;:1,&quot;Placement&quot;:0}],&quot;ColorOrder&quot;:[&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;]},&quot;Toolstrip&quot;:{&quot;DisplayState&quot;:&quot;expanded&quot;}}</P>
+    <P Name="WindowPosition">[1.000000,49.000000,1920.000000,1009.000000,]</P>
+    <P Name="ScopeFrameLocation">window</P>
+    <P Name="WasSavedAsWebScope">on</P>
+    <P Name="Floating">off</P>
+    <P Name="MultipleDisplayCache">[{&quot;MaxYLimMag&quot;:1,&quot;MaxYLimReal&quot;:1,&quot;MinYLimMag&quot;:0,&quot;MinYLimReal&quot;:-1,&quot;PlotAsMagnitudePhase&quot;:false,&quot;ShowGrid&quot;:true,&quot;ShowLegend&quot;:false,&quot;Title&quot;:&quot;%&lt;SignalLabel&gt;&quot;,&quot;YLabel&quot;:&quot;&quot;}]</P>
+    <P Name="NumInputPorts">1</P>
+    <P Name="SampleTime">0</P>
+    <P Name="ActiveDisplayYMinimum">-1</P>
+    <P Name="ActiveDisplayYMaximum">1</P>
+    <P Name="DataLoggingLimitDataPoints">on</P>
+    <P Name="DataLoggingMaxPoints">5000000</P>
+    <P Name="DataLoggingDecimateData">on</P>
+    <P Name="DataLoggingDecimation">1</P>
+    <P Name="DataLogging">on</P>
+    <P Name="DataLoggingVariableName">fiber_prop3</P>
     <P Name="DataLoggingSaveFormat">Structure With Time</P>
   </Block>
   <Block BlockType="Scope" Name="Scope SMF output" SID="169">
@@ -2012,8 +1957,10 @@ The following effects are included: group velocity dispersion (GVD), higher orde
     <P Name="DataLoggingSaveFormat">Structure With Time</P>
   </Block>
   <Block BlockType="SpectrumAnalyzer" Name="Spectrum&#xA;DSF output" SID="538">
+    <PortCounts in="1"/>
     <P Name="Position">[615, 60, 650, 110]</P>
     <P Name="ZOrder">6</P>
+    <P Name="OpenAtSimulationStart">off</P>
     <P Name="GraphicalSettings">{&quot;GraphicalSettings&quot;:{&quot;Style&quot;:{&quot;BackgroundColor&quot;:[0.12941176470588237,0.12941176470588237,0.12941176470588237],&quot;AxesColor&quot;:[0,0,0],&quot;LabelsColor&quot;:[0.68627450980392157,0.68627450980392157,0.68627450980392157],&quot;PreserveColors&quot;:false,&quot;Visible&quot;:true,&quot;LineStyle&quot;:[&quot;-&quot;],&quot;LineWidth&quot;:0.5,&quot;BarWidth&quot;:0.9,&quot;LineColor&quot;:[1,0.90980392156862744,0.39215686274509803],&quot;LineFaceAlpha&quot;:1,&quot;LineEdgeAlpha&quot;:1,&quot;Marker&quot;:[&quot;none&quot;],&quot;FontSize&quot;:8.5},&quot;MeasurementChannel&quot;:0}}</P>
     <P Name="WindowPosition">[1.000000,49.000000,1920.000000,1009.000000,]</P>
     <P Name="ScopeFrameLocation">window</P>
@@ -2029,16 +1976,19 @@ The following effects are included: group velocity dispersion (GVD), higher orde
     <P Name="AveragingMethod">Running</P>
     <P Name="SpectralAverages">3</P>
     <P Name="SpectrumUnits">Watts</P>
+    <P Name="MaximizeAxes">On</P>
     <P Name="YLabel">Power Spectrum |P(f)|</P>
-    <P Name="YLimits">[-3.6766493902438975e-8 3.13775e-7]</P>
+    <P Name="YLimits">[-1.2055511900046475e-8 1.3694094029423524e-7]</P>
     <P Name="ShowGrid">off</P>
     <P Name="AllowFFTLengthLessThanSamplesPerUpdate">on</P>
     <P Name="ScopeSpecificationString">spbscopes.SpectrumAnalyzerBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true),extmgr.Configuration(&apos;Visuals&apos;,&apos;Spectrum&apos;,true,&apos;AxesProperties&apos;,struct(&apos;Color&apos;,[0 0 0],&apos;XColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;YColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ZColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;XGrid&apos;,&apos;on&apos;,&apos;YGrid&apos;,&apos;on&apos;,&apos;ZGrid&apos;,&apos;off&apos;,&apos;Box&apos;,&apos;on&apos;,&apos;XScale&apos;,&apos;linear&apos;,&apos;YScale&apos;,&apos;linear&apos;,&apos;ZScale&apos;,&apos;linear&apos;,&apos;XDir&apos;,&apos;normal&apos;,&apos;YDir&apos;,&apos;normal&apos;,&apos;ZDir&apos;,&apos;normal&apos;,&apos;XTickMode&apos;,&apos;auto&apos;,&apos;YTickMode&apos;,&apos;auto&apos;,&apos;ZTickMode&apos;,&apos;auto&apos;,&apos;XTickLabelMode&apos;,&apos;manual&apos;,&apos;YTickLabelMode&apos;,&apos;auto&apos;,&apos;ZTickLabelMode&apos;,&apos;manual&apos;,&apos;XTickLabel&apos;,[&apos;-300&apos;;&apos;-200&apos;;&apos;-100&apos;;&apos;   0&apos;;&apos; 100&apos;;&apos; 200&apos;;&apos; 300&apos;],&apos;ZTickLabel&apos;,&apos;&apos;,&apos;FontName&apos;,&apos;Helvetica&apos;,&apos;FontSize&apos;,8.5,&apos;FontUnits&apos;,&apos;points&apos;,&apos;FontWeight&apos;,&apos;normal&apos;,&apos;Title&apos;,&apos;&apos;,&apos;XLabel&apos;,&apos;Frequency (GHz)&apos;,&apos;YLabel&apos;,&apos;Power Spectrum |P(f)| (Watts)&apos;,&apos;ZLabel&apos;,&apos;&apos;),&apos;LineProperties&apos;,struct(&apos;DisplayName&apos;,&apos;&apos;,&apos;Color&apos;,[1 1 0.0666666666666667],&apos;LineStyle&apos;,&apos;-&apos;,&apos;LineWidth&apos;,0.5,&apos;Marker&apos;,&apos;none&apos;,&apos;MarkerSize&apos;,6,&apos;MarkerEdgeColor&apos;,&apos;auto&apos;,&apos;MarkerFaceColor&apos;,&apos;none&apos;,&apos;Visible&apos;,&apos;on&apos;),&apos;YLabel&apos;,&apos;Power Spectrum |P(f)|&apos;,&apos;MinYLim&apos;,&apos;-3.6904826719857046e-07&apos;,&apos;MaxYLim&apos;,&apos;3.321434404787135e-06&apos;,&apos;SampleRate&apos;,&apos;640000000000&apos;,&apos;Span&apos;,&apos;640000000000&apos;,&apos;StartFrequency&apos;,&apos;-320000000000&apos;,&apos;StopFrequency&apos;,&apos;320000000000&apos;,&apos;SpectralAverages&apos;,&apos;3&apos;,&apos;FFTLengthSource&apos;,&apos;Property&apos;,&apos;PowerUnits&apos;,&apos;Watts&apos;,&apos;IsSpanValuesValid&apos;,true,&apos;SegLen&apos;,&apos;useInputSize&apos;,&apos;FrequencyResolutionMethod&apos;,&apos;WindowLength&apos;),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true,&apos;AutoscaleMode&apos;,&apos;Manual&apos;,&apos;OnceAtStop&apos;,false),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2016a&apos;)),&apos;Version&apos;,&apos;2016a&apos;,&apos;Position&apos;,[1.8 41.8 1532.8 739.2],&apos;VisibleAtModelOpen&apos;,&apos;on&apos;)</P>
     <P Name="DefaultConfigurationName">spbscopes.SpectrumAnalyzerBlockCfg</P>
   </Block>
   <Block BlockType="SpectrumAnalyzer" Name="Spectrum&#xA;Input" SID="508">
-    <P Name="Position">[410, 60, 445, 110]</P>
+    <PortCounts in="1"/>
+    <P Name="Position">[415, 60, 450, 110]</P>
     <P Name="ZOrder">-14</P>
+    <P Name="OpenAtSimulationStart">off</P>
     <P Name="GraphicalSettings">{&quot;GraphicalSettings&quot;:{&quot;Style&quot;:{&quot;BackgroundColor&quot;:[0.12941176470588237,0.12941176470588237,0.12941176470588237],&quot;AxesColor&quot;:[0,0,0],&quot;LabelsColor&quot;:[0.68627450980392157,0.68627450980392157,0.68627450980392157],&quot;PreserveColors&quot;:false,&quot;Visible&quot;:true,&quot;LineStyle&quot;:[&quot;-&quot;],&quot;LineWidth&quot;:0.5,&quot;BarWidth&quot;:0.9,&quot;LineColor&quot;:[1,0.90980392156862744,0.39215686274509803],&quot;LineFaceAlpha&quot;:1,&quot;LineEdgeAlpha&quot;:1,&quot;Marker&quot;:[&quot;none&quot;],&quot;FontSize&quot;:8.5},&quot;MeasurementChannel&quot;:0}}</P>
     <P Name="WindowPosition">[1.000000,49.000000,1920.000000,1009.000000,]</P>
     <P Name="ScopeFrameLocation">window</P>
@@ -2055,17 +2005,19 @@ The following effects are included: group velocity dispersion (GVD), higher orde
     <P Name="SpectralAverages">3</P>
     <P Name="SpectrumUnits">Watts</P>
     <P Name="YLabel">Power Spectrum |P(f)|</P>
-    <P Name="YLimits">[-1 1]</P>
+    <P Name="YLimits">[-1.046153846153846 0.9538461538461538]</P>
     <P Name="ShowGrid">off</P>
     <P Name="AllowFFTLengthLessThanSamplesPerUpdate">on</P>
     <P Name="ScopeSpecificationString">spbscopes.SpectrumAnalyzerBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true),extmgr.Configuration(&apos;Visuals&apos;,&apos;Spectrum&apos;,true,&apos;AxesProperties&apos;,struct(&apos;Color&apos;,[0 0 0],&apos;XColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;YColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ZColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;XGrid&apos;,&apos;on&apos;,&apos;YGrid&apos;,&apos;on&apos;,&apos;ZGrid&apos;,&apos;off&apos;,&apos;Box&apos;,&apos;on&apos;,&apos;XScale&apos;,&apos;linear&apos;,&apos;YScale&apos;,&apos;linear&apos;,&apos;ZScale&apos;,&apos;linear&apos;,&apos;XDir&apos;,&apos;normal&apos;,&apos;YDir&apos;,&apos;normal&apos;,&apos;ZDir&apos;,&apos;normal&apos;,&apos;XTickMode&apos;,&apos;auto&apos;,&apos;YTickMode&apos;,&apos;auto&apos;,&apos;ZTickMode&apos;,&apos;auto&apos;,&apos;XTickLabelMode&apos;,&apos;manual&apos;,&apos;YTickLabelMode&apos;,&apos;auto&apos;,&apos;ZTickLabelMode&apos;,&apos;manual&apos;,&apos;XTickLabel&apos;,[&apos;-300&apos;;&apos;-200&apos;;&apos;-100&apos;;&apos;   0&apos;;&apos; 100&apos;;&apos; 200&apos;;&apos; 300&apos;],&apos;ZTickLabel&apos;,&apos;&apos;,&apos;FontName&apos;,&apos;Helvetica&apos;,&apos;FontSize&apos;,8.5,&apos;FontUnits&apos;,&apos;points&apos;,&apos;FontWeight&apos;,&apos;normal&apos;,&apos;Title&apos;,&apos;&apos;,&apos;XLabel&apos;,&apos;Frequency (GHz)&apos;,&apos;YLabel&apos;,&apos;Power Spectrum |P(f)| (Watts)&apos;,&apos;ZLabel&apos;,&apos;&apos;),&apos;LineProperties&apos;,struct(&apos;DisplayName&apos;,&apos;&apos;,&apos;Color&apos;,[1 1 0.0666666666666667],&apos;LineStyle&apos;,&apos;-&apos;,&apos;LineWidth&apos;,0.5,&apos;Marker&apos;,&apos;none&apos;,&apos;MarkerSize&apos;,6,&apos;MarkerEdgeColor&apos;,&apos;auto&apos;,&apos;MarkerFaceColor&apos;,&apos;none&apos;,&apos;Visible&apos;,&apos;on&apos;),&apos;YLabel&apos;,&apos;Power Spectrum |P(f)|&apos;,&apos;MinYLim&apos;,&apos;-6.4815298732540151e-05&apos;,&apos;MaxYLim&apos;,&apos;0.00058333768859991598&apos;,&apos;SampleRate&apos;,&apos;640000000000&apos;,&apos;Span&apos;,&apos;640000000000&apos;,&apos;StartFrequency&apos;,&apos;-320000000000&apos;,&apos;StopFrequency&apos;,&apos;320000000000&apos;,&apos;SpectralAverages&apos;,&apos;3&apos;,&apos;FFTLengthSource&apos;,&apos;Property&apos;,&apos;PowerUnits&apos;,&apos;Watts&apos;,&apos;IsSpanValuesValid&apos;,true,&apos;SegLen&apos;,&apos;useInputSize&apos;,&apos;FrequencyResolutionMethod&apos;,&apos;WindowLength&apos;),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true,&apos;AutoscaleMode&apos;,&apos;Manual&apos;,&apos;OnceAtStop&apos;,false),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2016a&apos;)),&apos;Version&apos;,&apos;2016a&apos;,&apos;Position&apos;,[1.8 41.8 1532.8 739.2],&apos;VisibleAtModelOpen&apos;,&apos;on&apos;)</P>
     <P Name="DefaultConfigurationName">spbscopes.SpectrumAnalyzerBlockCfg</P>
   </Block>
   <Block BlockType="SpectrumAnalyzer" Name="Spectrum&#xA;SMF output" SID="185">
+    <PortCounts in="1"/>
     <P Name="Position">[925, 295, 960, 345]</P>
     <P Name="ZOrder">-13</P>
+    <P Name="OpenAtSimulationStart">off</P>
     <P Name="GraphicalSettings">{&quot;GraphicalSettings&quot;:{&quot;Style&quot;:{&quot;BackgroundColor&quot;:[0.12941176470588237,0.12941176470588237,0.12941176470588237],&quot;AxesColor&quot;:[0,0,0],&quot;LabelsColor&quot;:[0.68627450980392157,0.68627450980392157,0.68627450980392157],&quot;PreserveColors&quot;:false,&quot;Visible&quot;:true,&quot;LineStyle&quot;:[&quot;-&quot;],&quot;LineWidth&quot;:0.5,&quot;BarWidth&quot;:0.9,&quot;LineColor&quot;:[1,0.90980392156862744,0.39215686274509803],&quot;LineFaceAlpha&quot;:1,&quot;LineEdgeAlpha&quot;:1,&quot;Marker&quot;:[&quot;none&quot;],&quot;FontSize&quot;:8.5},&quot;MeasurementChannel&quot;:0}}</P>
-    <P Name="WindowPosition">[-21.000000,154.000000,1280.000000,729.000000,]</P>
+    <P Name="WindowPosition">[328.000000,149.000000,1280.000000,729.000000,]</P>
     <P Name="ScopeFrameLocation">window</P>
     <P Name="WasSavedAsWebScope">on</P>
     <P Name="Method">Welch</P>
@@ -2080,7 +2032,7 @@ The following effects are included: group velocity dispersion (GVD), higher orde
     <P Name="SpectralAverages">3</P>
     <P Name="SpectrumUnits">Watts</P>
     <P Name="YLabel">Power Spectrum |P(f)|</P>
-    <P Name="YLimits">[-1 1]</P>
+    <P Name="YLimits">[-1.1156233715476809 0.984376628452319]</P>
     <P Name="ShowGrid">off</P>
     <P Name="AllowFFTLengthLessThanSamplesPerUpdate">on</P>
     <P Name="ScopeSpecificationString">spbscopes.SpectrumAnalyzerBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true),extmgr.Configuration(&apos;Visuals&apos;,&apos;Spectrum&apos;,true,&apos;AxesProperties&apos;,struct(&apos;Color&apos;,[0 0 0],&apos;XColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;YColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ZColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;XGrid&apos;,&apos;on&apos;,&apos;YGrid&apos;,&apos;on&apos;,&apos;ZGrid&apos;,&apos;off&apos;,&apos;Box&apos;,&apos;on&apos;,&apos;XScale&apos;,&apos;linear&apos;,&apos;YScale&apos;,&apos;linear&apos;,&apos;ZScale&apos;,&apos;linear&apos;,&apos;XDir&apos;,&apos;normal&apos;,&apos;YDir&apos;,&apos;normal&apos;,&apos;ZDir&apos;,&apos;normal&apos;,&apos;XTickMode&apos;,&apos;auto&apos;,&apos;YTickMode&apos;,&apos;auto&apos;,&apos;ZTickMode&apos;,&apos;auto&apos;,&apos;XTickLabelMode&apos;,&apos;manual&apos;,&apos;YTickLabelMode&apos;,&apos;auto&apos;,&apos;ZTickLabelMode&apos;,&apos;manual&apos;,&apos;XTickLabel&apos;,[&apos;-300&apos;;&apos;-200&apos;;&apos;-100&apos;;&apos;   0&apos;;&apos; 100&apos;;&apos; 200&apos;;&apos; 300&apos;],&apos;ZTickLabel&apos;,&apos;&apos;,&apos;FontName&apos;,&apos;Helvetica&apos;,&apos;FontSize&apos;,8.5,&apos;FontUnits&apos;,&apos;points&apos;,&apos;FontWeight&apos;,&apos;normal&apos;,&apos;Title&apos;,&apos;&apos;,&apos;XLabel&apos;,&apos;Frequency (GHz)&apos;,&apos;YLabel&apos;,&apos;Power Spectrum |P(f)| (Watts)&apos;,&apos;ZLabel&apos;,&apos;&apos;),&apos;LineProperties&apos;,struct(&apos;DisplayName&apos;,&apos;&apos;,&apos;Color&apos;,[1 1 0.0666666666666667],&apos;LineStyle&apos;,&apos;-&apos;,&apos;LineWidth&apos;,0.5,&apos;Marker&apos;,&apos;none&apos;,&apos;MarkerSize&apos;,6,&apos;MarkerEdgeColor&apos;,&apos;auto&apos;,&apos;MarkerFaceColor&apos;,&apos;none&apos;,&apos;Visible&apos;,&apos;on&apos;),&apos;YLabel&apos;,&apos;Power Spectrum |P(f)|&apos;,&apos;MinYLim&apos;,&apos;-2.2844302679288607e-07&apos;,&apos;MaxYLim&apos;,&apos;2.0559874217319507e-06&apos;,&apos;SampleRate&apos;,&apos;640000000000&apos;,&apos;Span&apos;,&apos;640000000000&apos;,&apos;StartFrequency&apos;,&apos;-320000000000&apos;,&apos;StopFrequency&apos;,&apos;320000000000&apos;,&apos;SpectralAverages&apos;,&apos;3&apos;,&apos;FFTLengthSource&apos;,&apos;Property&apos;,&apos;PowerUnits&apos;,&apos;Watts&apos;,&apos;IsSpanValuesValid&apos;,true,&apos;SegLen&apos;,&apos;useInputSize&apos;,&apos;FrequencyResolutionMethod&apos;,&apos;WindowLength&apos;),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true,&apos;AutoscaleMode&apos;,&apos;Manual&apos;,&apos;OnceAtStop&apos;,false),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2016a&apos;)),&apos;Version&apos;,&apos;2016a&apos;,&apos;Position&apos;,[1.8 41.8 1532.8 739.2],&apos;VisibleAtModelOpen&apos;,&apos;on&apos;)</P>
@@ -2095,11 +2047,20 @@ The following effects are included: group velocity dispersion (GVD), higher orde
     <P Name="SaveFormat">Structure</P>
     <P Name="SampleTime">-1</P>
   </Block>
+  <Block BlockType="TransportDelay" Name="Transport&#xA;Delay" SID="543">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[615, 600, 655, 640]</P>
+    <P Name="ZOrder">9</P>
+    <P Name="DelayTime">1.95e-9</P>
+    <P Name="BufferSize">2048</P>
+  </Block>
   <Block BlockType="Unbuffer" Name="Unbuffer" SID="474">
+    <PortCounts in="1" out="1"/>
     <P Name="Position">[1005, 166, 1055, 214]</P>
     <P Name="ZOrder">-16</P>
   </Block>
   <Block BlockType="Unbuffer" Name="Unbuffer1" SID="530">
+    <PortCounts in="1" out="1"/>
     <P Name="Position">[785, 411, 835, 459]</P>
     <P Name="ZOrder">1</P>
   </Block>
@@ -2181,7 +2142,15 @@ The following effects are included: group velocity dispersion (GVD), higher orde
     <P Name="ZOrder">17</P>
     <P Name="Src">507#out:1</P>
     <P Name="Points">[44, 0; 0, 100]</P>
-    <P Name="Dst">509#in:1</P>
+    <Branch>
+      <P Name="ZOrder">58</P>
+      <P Name="Points">[0, 240]</P>
+      <P Name="Dst">543#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">57</P>
+      <P Name="Dst">509#in:1</P>
+    </Branch>
   </Line>
   <Line>
     <P Name="ZOrder">18</P>
@@ -2201,7 +2170,16 @@ The following effects are included: group velocity dispersion (GVD), higher orde
   <Line>
     <P Name="ZOrder">40</P>
     <P Name="Src">530#out:1</P>
-    <P Name="Dst">528#in:1</P>
+    <P Name="Points">[7, 0]</P>
+    <Branch>
+      <P Name="ZOrder">61</P>
+      <P Name="Points">[0, 165]</P>
+      <P Name="Dst">540#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">60</P>
+      <P Name="Dst">528#in:1</P>
+    </Branch>
   </Line>
   <Line>
     <P Name="ZOrder">41</P>
@@ -2236,6 +2214,16 @@ The following effects are included: group velocity dispersion (GVD), higher orde
       <P Name="Dst">527#in:1</P>
     </Branch>
   </Line>
+  <Line>
+    <P Name="ZOrder">53</P>
+    <P Name="Src">540#out:1</P>
+    <P Name="Dst">541#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">74</P>
+    <P Name="Src">543#out:1</P>
+    <P Name="Dst">540#in:2</P>
+  </Line>
 </System>
 
 __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
@@ -2262,10 +2250,10 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="IsTabbed" Class="logical">1</P>
           <P Name="ViewObjType" Class="char">SimulinkTopLevel</P>
           <P Name="LoadSaveID" Class="char">0</P>
-          <P Name="Extents" Class="double">[1882.0, 593.0]</P>
-          <P Name="ZoomFactor" Class="double">1.5</P>
-          <P Name="Offset" Class="double">[-46.362313607602566, -6.9201986083904217]</P>
-          <P Name="SceneRectInView" Class="double">[-46.362313607602566, -6.9201986083904217, 1254.6666666666667, 395.33333333333331]</P>
+          <P Name="Extents" Class="double">[1882.0, 805.0]</P>
+          <P Name="ZoomFactor" Class="double">1.0</P>
+          <P Name="Offset" Class="double">[-358.81041666666715, 65.916666666666742]</P>
+          <P Name="SceneRectInView" Class="double">[-358.81041666666715, 65.916666666666742, 1882.0, 805.0]</P>
         </Object>
         <Object ObjectID="6">
           <P Name="IsActive" Class="logical">0</P>
@@ -2305,11 +2293,11 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="Minimized" Class="char">Unset</P>
         </Object>
       </Array>
-      <P Name="WindowState" Class="char">AAAA/wAAAAD9AAAAAwAAAAAAAAE0AAADYvwCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD8AAAAeQAAA2IAAAAAAP////oAAAABAgAAAAL7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABjAP////sAAAB4AEwAaQBiAHIAYQByAHkAQgByAG8AdwBzAGUAcgAyACAATABpAGIAcgBhAHIAeQBCAHIAbwB3AHMAZQByAFMAdAB1AGQAaQBvAEMAbwBtAHAAbwBuAGUAbgB0AC8AcwB1AGIAcwB5AHMAdABlAG0AMgBfAHMAbQBmAQAAAAD/////AAAAAAAAAAD7AAAAYABTAGkAbQB1AGwAaQBuAGsAOgBFAGQAaQB0AG8AcgA6AFIAZQBmAGUAcgBlAG4AYwBlAGQARgBpAGwAZQBzAC8AUgBlAGYAZQByAGUAbgBjAGUAZAAgAEYAaQBsAGUAcwAAAAAA/////wAAAIwA////AAAAAQAAAAAAAAAA/AIAAAAB+wAAAFQARwBMAFUARQAyADoAUAByAG8AcABlAHIAdAB5AEkAbgBzAHAAZQBjAHQAbwByAC8AUAByAG8AcABlAHIAdAB5ACAASQBuAHMAcABlAGMAdABvAHIAAAAAAP////8AAAGsAP///wAAAAMAAAeAAAAA0PwBAAAAAfv/////AQAAAAAAAAeAAAACeQD///8AAAeAAAACjgAAAAEAAAACAAAAAQAAAAL8AAAAAA==</P>
+      <P Name="WindowState" Class="char">AAAA/wAAAAD9AAAAAwAAAAAAAAE0AAADYvwCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD8AAAAeQAAA2IAAAAAAP////oAAAABAgAAAAL7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABjAP////sAAAB4AEwAaQBiAHIAYQByAHkAQgByAG8AdwBzAGUAcgAyACAATABpAGIAcgBhAHIAeQBCAHIAbwB3AHMAZQByAFMAdAB1AGQAaQBvAEMAbwBtAHAAbwBuAGUAbgB0AC8AcwB1AGIAcwB5AHMAdABlAG0AMgBfAHMAbQBmAQAAAAD/////AAAAAAAAAAD7AAAAYABTAGkAbQB1AGwAaQBuAGsAOgBFAGQAaQB0AG8AcgA6AFIAZQBmAGUAcgBlAG4AYwBlAGQARgBpAGwAZQBzAC8AUgBlAGYAZQByAGUAbgBjAGUAZAAgAEYAaQBsAGUAcwAAAAAA/////wAAAIwA////AAAAAQAAAAAAAAAA/AIAAAAB+wAAAFQARwBMAFUARQAyADoAUAByAG8AcABlAHIAdAB5AEkAbgBzAHAAZQBjAHQAbwByAC8AUAByAG8AcABlAHIAdAB5ACAASQBuAHMAcABlAGMAdABvAHIAAAAAAP////8AAAGsAP///wAAAAMAAAZIAAAA0PwBAAAAAfv/////AAAAAAD/////AAACeQD///8AAAeAAAADYgAAAAEAAAACAAAAAQAAAAL8AAAAAA==</P>
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
       <P Name="WindowUuid" Class="char">3b5115a5-2b05-4f38-babe-c11026954c68</P>
     </Object>
-    <P Name="BDUuid" Class="char">1f157a67-3db3-42e3-b00c-8bf07cd4803f</P>
+    <P Name="BDUuid" Class="char">c9c25842-9105-48bb-b3d4-e95c2db9c94b</P>
   </Object>
 </WindowsInfo>
 
